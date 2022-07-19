@@ -10,7 +10,9 @@ function App() {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(addPosition(data));
+    data.forEach(element => {
+      dispatch(addPosition(element));
+    });
   }, []);
 
   return (

@@ -4,7 +4,7 @@ import { JobPosition } from './JobPosition';
 
 const JobList = () => {
   const allFilters = useSelector(allPositionSelector);
-  console.log(allFilters);
+  
   return (
     <div className='job-list'>
       {allFilters.map(item => (
