@@ -4,6 +4,7 @@ import { TheHeader } from 'components/TheHeader';
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { addPosition } from './store/positions/positionsActions';
+
 import data from './mock/data.json';
 
 function App() {
