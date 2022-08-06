@@ -1,9 +1,8 @@
 import { useSelector } from 'react-redux';
-import { filterPositionSelector} from 'store/positions/positionsSelectors';
 import { JobPosition } from './JobPosition';
 import { useDispatch } from 'react-redux';
-import { addFilter } from '../store/filter/filter-action';
-import { allFilterSelector } from '../store/filter/filter-selectors';
+import { filterPositionSelector } from './positionsSlice';
+import { allFilterSelector, addFilter } from '../filter/filtersSlice';
 
 const JobList = () => {
   const filteredFilters = useSelector(allFilterSelector);
